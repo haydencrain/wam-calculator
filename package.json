@@ -11,7 +11,8 @@
     "next": "^7.0.2",
     "node-sass": "^4.7.2",
     "react": "^16.6.1",
-    "react-dom": "^16.6.1"
+    "react-dom": "^16.6.1",
+    "uuid": "^3.3.2"
   },
   "devDependencies": {
     "@types/next": "^7.0.3",

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Router from 'next/router';
+import SessionStorageService from '../lib/sessionStorage/SessionStorageService';
 import '../styles/global.scss';
 
 export default class Index extends React.Component<Props, State> {
@@ -11,16 +12,16 @@ export default class Index extends React.Component<Props, State> {
 	}
 
 	handleChange = (e: React.SyntheticEvent<any>) => {
-		this.setState({ tableString: e.currentTarget.value })
+		this.setState({ tableString: e.currentTarget.value });
 	};
 
 	handleSubmit = (e: any) => {
 		if (!this.state.tableString)
 			alert("Enter some data first!");
 		else {
+			SessionStorageService.setTableString(this.state.tableString);
 			Router.push('/result');
 		}
-		
 		e.preventDefault();
 	};
 	

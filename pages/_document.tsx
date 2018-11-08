@@ -5,7 +5,6 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-					<title>WAM Calulator</title>
         </Head>
         <body>
           <Main />
