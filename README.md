@@ -12,10 +12,11 @@ git clone https://github.com/haydencrain/wam-calculator.git
 
 Install dependencies:
 ```bash
-npm run build
+npm install
 ```
 
 Run the build:
 ```
+npm run build
 npm run dev
 ```
