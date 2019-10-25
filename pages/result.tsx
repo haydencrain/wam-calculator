@@ -24,9 +24,9 @@ export default class Result extends React.Component<Props, State> {
 
 	async componentDidMount() {
 		const tableString = SessionStorageService.getTableString();
-		if (!tableString) 
+		if (!tableString) {
 			Router.push('/');
-		else {
+		} else {
 			await new Promise((resolve) => {
 				setTimeout(resolve, 2000);
 			});

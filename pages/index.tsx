@@ -11,6 +11,10 @@ export default class Index extends React.Component<Props, State> {
 		};
 	}
 
+	componentDidMount() {
+		this.setState({ tableString: SessionStorageService.getTableString() });
+	}
+
 	handleChange = (e: React.SyntheticEvent<any>) => {
 		this.setState({ tableString: e.currentTarget.value });
 	};
